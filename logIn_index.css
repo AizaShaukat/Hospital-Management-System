@@ -1,0 +1,134 @@
+body{
+    font-family: 'Noto Sans', sans-serif;
+    background-image: url(Pictures/pawel-czerwinski-2Y8ol_OBS1I-unsplash\ 3.jpg);
+    background-repeat: no-repeat;
+    background-position: top left;
+    background-size: 1500px 800px; 
+}
+
+header li,a,button{
+    color: #3C3096;
+    text-decoration: none;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: none;
+    padding: none;   
+}
+
+main{
+    height: auto;
+}
+
+.footer a{
+    color: white;
+    position: relative;
+    bottom: 6px;
+    left: 650px;
+    cursor: pointer;
+}
+.footer a:hover{
+  color: #587DFF;
+}
+.envelope{
+    height: 35px;
+    width: 35px;
+    position: relative;
+    bottom: 0px;
+    top: 5px;
+    left: 320px;
+}
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #3C3096;
+    color: white;
+    text-align: left;
+    height: 45px;
+  }
+.roles{
+padding-left: 200px;
+padding-top: 170px;
+}
+
+#role{
+    font-size: 40px;
+    color: #3C3096;
+    font-weight:bolder;
+}
+.logo{
+    cursor: pointer;
+    height: 60px;
+    width: 200px;
+    
+
+}
+#doctor{
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+.nav_links{
+    list-style: none;
+       margin-left: 800px;
+}
+
+.nav_links li{
+    display: inline-block;
+    padding: 0px 20px;
+   
+}
+
+.nav_links li a{
+    transition: all 0.3s ease 0s;
+}
+
+.nav_links li a:hover{
+    color: #587DFF;
+}
+.loginInputs{
+    width: 500px;
+    height: 60px;
+    border-radius: 30px;
+    border: 1px solid black;
+    font-size: 18px;
+    text-align: center;
+}
+
+.login{
+padding-top: 250px;
+padding-left:80px ;
+}
+button{
+    height: 40px;
+    width: 100px;
+    border-radius: 50px;
+    border: 1px solid black;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    background-color: #3C3096;
+    color: azure;
+
+}
+
+button:hover{
+    background-color: #587DFF;
+    color: black;
+}
+
+main button{
+    height: 55px;
+    width: 200px;
+    border-radius: 50px;
+    border: 1px solid black;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    background-color: #3C3096;
+    color: azure;
+    font-size: 19px;
+    margin-left: 140px;
+}

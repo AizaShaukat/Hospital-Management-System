@@ -1,0 +1,75 @@
+/* patientForm.css */
+body {
+    font-family: 'Noto Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+   
+}
+
+#content {
+    padding: 20px;
+    width: 1000px;
+}
+
+h2{
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: black;
+}
+
+form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="date"],
+input[type="email"],
+input[type="tel"],
+textarea {
+    width: 91%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #3C3096;
+    border-radius: 30px;
+    margin-right: -5px;
+}
+
+input[type="submit"] {
+    background-color: #3C3096;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+input[type="submit"]:hover {
+    background-color: #555;
+}
+/* Style radio buttons */
+input[type="radio"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #3C3096; /* Blue border color */
+    border-radius: 50%; /* Round shape */
+    outline: none;
+    transition: 0.3s;
+}
+
+/* When radio button is checked */
+input[type="radio"]:checked {
+    background-color: #3C3096; /* Blue background color */
+}

@@ -1,0 +1,38 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" type="text/css" href="admin.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    <div id="sidebar">
+        <div id="logo-container">
+        <img id="logo" src="whitelogo.png" alt="Logo">
+         </div>
+        <a href="patientForm.html" target="contentFrame">Enter a New Patient</a>
+        <a href="updatePatient.html" target="contentFrame">Update Existing Patients</a>
+        <a href="doctorForm.html" target="contentFrame">Enter a New Doctor</a>
+        <a href="updateDoc.html" target="contentFrame">Update Existing Doctor</a>
+        <a href="invoiceForm.html" target="contentFrame">Generate Invoice</a>
+        <a href="searchDoc.html" target="contentFrame">Search Doctor</a>
+        <a href="searchPatient.html" target="contentFrame">Search Patient</a>
+    </div>
+    
+        
+        
+    <div id="content">
+        <iframe name="contentFrame" width="100%" height="100%" frameborder="0"></iframe>
+    </div>
+    <div id="logo-container-fixed">
+        <img id="logo-fixed" src="mainlogo-nobackground.png" alt="Logo">
+    </div>
+    <script src="admin.js"></script>
+</body>
+</html>

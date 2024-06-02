@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generate Invoice</title>
+    <link rel="stylesheet" type="text/css" href="invoiceForm.css">
+   <script src="invoice.js"></script>
+</head>
+<body>
+    <div id="content">
+        <h1>Generate Invoice</h1>
+        <form id="invoiceForm" action="invoiceForm.php" method="POST">
+            <label for="invoiceID">Invoice ID:</label>
+            <input type="text" id="invoiceID" name="invoiceID"><br><br>
+
+            <label for="patientID">Patient ID:</label>
+            <input type="text" id="patientID" name="patientID"><br><br>
+
+           
+            
+            <label for="date">Date:</label>
+            <input type="date" id="date" name="date" required><br><br>
+            
+            <label for="roomCharges">Room Charges:</label>
+            <input type="number" id="roomCharges" name="roomCharges" required><br><br>
+            
+            <label for="medicines">Medicine Charges:</label>
+            <input  type="number" id="medicines" name="medicines" required><br><br>
+            
+              
+            <input type="submit" value="Generate Invoice " id="#generateInvoiceButton">
+        </form>
+        
+        <div id="invoiceBill" style="display: none;">
+            <!-- Placeholder for the generated invoice -->
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<head>
+    <title>
+        Healthplus Hospital
+    </title>
+    <link rel="icon" type="image/png" href="Pictures/nobackgroundLogo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="logIn_index.css">
+</head>
+
+<body>
+ 
+    
+    <header>
+        <a href="main_index.html"><img  class="logo" alt="logo" src="Pictures/mainlogo-nobackground.png"></a>
+        <nav>
+            <ul class="nav_links">
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Services</a></li>
+            </ul>
+        </nav>
+        <a href="main_index.html"><button>Home Page</button></a>
+    </header>
+<main>
+    <div class="login">
+   
+        
+       <form  method="post" action="logIn_account_check.php">
+        <input type="hidden" name="role" id="variable" value="">
+        <input id="emailInput" class="loginInputs" type="text" name="email" placeholder="Enter your ID">
+        <br><br>    
+        <input id="passwordInput" class="loginInputs" type="password" name="password" placeholder="Enter password">
+      <br><br>
+        <div id="submit">
+        <a  href="#"><button type="submit" name="submit">Submit</button></a> </form>
+    </div>
+    </div>
+    
+ 
+</main>
+<div class="footer">
+    <a href="mailto:bsce21031@itu.edu.pk?subject=Lab1&body=Complete the given tasks.">
+        Send an email to register a complain</a>
+    <img class="envelope" alt="envelope" src="Pictures/envelope.png">
+   
+  </div><!-- In logIn_index.html -->
+  <script>
+      // Retrieve the value from local storage
+      var roleValue = localStorage.getItem('variable');
+      document.getElementById('variable').value = roleValue;
+  </script>
+  
+</body>
+<html>

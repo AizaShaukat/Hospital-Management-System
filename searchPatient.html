@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Doctor</title>
+    <link rel="stylesheet" type="text/css" href="searchDoc.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    <div id="content">
+        <h1>Search Patient</h1>
+        <div id="search-form">
+            <input type="text" id="search-input" placeholder="Search for a patient...">
+            <button id="search-button">Search</button>
+        </div>
+        <div id="search-results">
+            <!-- Search results will be displayed here -->
+        </div>
+    </div>
+    <script>
+        document.getElementById("search-button").addEventListener("click", function() {
+            const searchTerm = document.getElementById("search-input").value;
+
+            // Create a new XMLHttpRequest object
+            const xhr = new XMLHttpRequest();
+
+            // Configure the request
+            xhr.open("POST", "searchPatient.php", true);
+            xhr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+
+            // Define what happens on successful data submission
+            xhr.onreadystatechange = function() {
+                if (xhr.readyState === XMLHttpRequest.DONE) {
+                    if (xhr.status === 200) {
+                        // Update the search-results div with the response from searchPatient.php
+                        document.getElementById("search-results").innerHTML = xhr.responseText;
+                    } else {
+                        console.error("Error: " + xhr.status);
+                    }
+                }
+            };
+
+            // Send the request with the search term
+            xhr.send("searchTerm=" + searchTerm);
+        });
+    </script>
+</body>
+</html>
