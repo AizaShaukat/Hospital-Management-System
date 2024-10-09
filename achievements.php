@@ -67,4 +67,4 @@ if (isset($_GET['id'])) {
 
 
 $mysqli->close();
-?>
+
